@@ -1,0 +1,26 @@
+<div id="container">
+    <h3>Cómic numero {{numComic}}</h3>
+    <h1>Titulado: {{titComic}}</h1>
+    <img src="{{urlComic}}" alt="{{altTextComic}}">
+    <h3>Coméntanos ¿Qué te pareció este Cómic?</h3>
+    <div id="qualification">
+        <form>
+            <p class="clasificacion">
+                <input id="calif1" type="radio" name="estrellas" (click)="puntuacion(5)">
+                <label for="calif1">★</label>
+                <input id="calif2" type="radio" name="estrellas" (click)="puntuacion(4)">
+                <label for="calif2">★</label>
+                <input id="calif3" type="radio" name="estrellas" (click)="puntuacion(3)">
+                <label for="calif3">★</label>
+                <input id="calif4" type="radio" name="estrellas" (click)="puntuacion(2)">
+                <label for="calif4">★</label>
+                <input id="calif5" type="radio" name="estrellas" (click)="puntuacion(1)">
+                <label for="calif5">★</label>
+            </p>
+          </form>
+    </div>
+    <p id="header-tittle" *ngIf="califRdy">
+         Gracias por calificar nuestro Cómic, tú opinión es muy importante para nosotros!</p>
+    <button type="button" class="btn btn-primary" id="boton-general" (click)="comicAleatorio()">Mirar otro Cómic</button>
+    <button type="button" class="btn btn-primary" id="boton-general" (click)="regresar()">Regresar al Incio</button>
+</div> 

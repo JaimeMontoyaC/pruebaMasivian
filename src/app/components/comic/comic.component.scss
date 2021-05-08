@@ -1,0 +1,51 @@
+@import "../../../styles.scss";
+
+#container{
+    margin-top: 60px;
+}
+
+img{
+    margin: 20px auto;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+  }
+  
+  #form p {
+    text-align: center;
+  }
+  
+  #form label {
+    font-size: 20px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+    font-size: 40px;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
+  #boton-general{
+    margin: 20px ;
+  }
