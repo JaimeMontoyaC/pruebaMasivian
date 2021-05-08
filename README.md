@@ -1,27 +1,17 @@
-# PruebaMasiv
+Para visualizar correctamente el proyecto.
+1.	Es necesario un framework para ejecutar el aplicativo, que fue desarrollado en Angular.
+2.	Es necesario tener instalado node.js, de no tenerlo seguir la siguiente guía:
+		https://phoenixnap.com/kb/install-node-js-npm-on-windows
+3.	Es necesario tener instalado Angular, de no tenerlo en el cmd ejecutar el siguiente comando: 
+		npm install -g @angular/cli
+4.	Estando en la ruta del proyecto desde la consola ejecutar comando npm install (apartir de la ruta SRC).
+5.	Estando en la ruta del proyecto desde la consola ejecutar comando npm start o ng serve.
+6.	Una vez completado lo anterior se podrá observar el proyecto en el localhost.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
+Nota: El api proporcionado tiene bloqueos por políticas de CORS. Ya que no es un api propio; en el navegador Chrome se puede resolver este error mediante una extensión, en caso de que en su ordenador le genere el error de CORS. Para ello por favor agregar la extensión al navegador para solventar el tema. La extensión es la siguiente:
+https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf
+Una vez añadido, solo debe activarlo como indica el enlace y podrá consumirse el api correctamente.
 
-## Development server
+Nota: El listado de comics del api, es de aproximadamente 2600 según las pruebas realizadas, pero algunos de ellos tienen actualmente el enlace de la imagen roto. En caso de que el programa seleccione uno de ellos, simplemente dar click en la opción “Mirar otro Cómic”.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
